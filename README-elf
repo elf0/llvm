@@ -5,7 +5,7 @@ Study/Compile/debug llvm easily by QtCreator.
 
 You can debug tools/lli for now.
 
-Some source files will generated automatically, so you should configure and make llvm.
+Some source files will be generated automatically, so you should configure and make llvm first.
 
 Steps:
 1: Merge this project dirs to llvm-3.4
