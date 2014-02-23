@@ -4,3 +4,11 @@ llvm
 Study/Compile/debug llvm easily by QtCreator.
 
 You can debug tools/lli for now.
+
+Some source files will generated automatically, so you should configure and make llvm.
+
+Steps:
+1: Merge this project dirs to llvm-3.4
+2: ./configure --prefix=/usr --enable-optimized --disable-assertions --enable-targets=x86_64
+3: make -j4
+4: Open llvm.pro with QtCreator
