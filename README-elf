@@ -2,3 +2,5 @@ llvm
 ====
 
 Study/Compile/debug llvm easily by QtCreator.
+
+You can debug tools/lli for now.
