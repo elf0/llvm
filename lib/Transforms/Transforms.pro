@@ -5,6 +5,7 @@
 TEMPLATE = subdirs
 
 SUBDIRS = \
+    InstCombine \
     Instrumentation \
     IPO \
     ObjCARC \
