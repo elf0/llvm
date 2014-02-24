@@ -5,4 +5,5 @@
 TEMPLATE = subdirs
 
 SUBDIRS = \
+    clang \
     lli
