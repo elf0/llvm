@@ -12,8 +12,10 @@ SUBDIRS = \
     ExecutionEngine \
     IR \
     IRReader \
+    Linker \
     MC \
     Object \
+    Option \
     Support \
     Target \
     Transforms
