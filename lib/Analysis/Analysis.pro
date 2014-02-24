@@ -4,5 +4,5 @@
 
 TEMPLATE = subdirs
 
-SUBDIRS = libAnalysis \
+SUBDIRS = libAnalysis.pro \
     IPA
