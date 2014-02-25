@@ -7,7 +7,7 @@ TEMPLATE = app
 CONFIG += console
 CONFIG -= qt
 CONFIG -= app_bundle
-DESTDIR = ..
+DESTDIR = ../../../../bin
 
 INCLUDEPATH = ../../../../include
 
