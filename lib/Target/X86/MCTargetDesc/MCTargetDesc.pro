@@ -8,7 +8,8 @@ CONFIG += staticlib
 CONFIG -= qt
 CONFIG -= app_bundle
 DESTDIR = ../../..
-INCLUDEPATH += ..
+
+INCLUDEPATH = ../../../../include ..
 
 DEFINES += _GNU_SOURCE __STDC_CONSTANT_MACROS __STDC_FORMAT_MACROS __STDC_LIMIT_MACROS
 

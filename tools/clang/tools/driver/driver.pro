@@ -9,6 +9,8 @@ CONFIG -= qt
 CONFIG -= app_bundle
 DESTDIR = ..
 
+INCLUDEPATH = ../../../../include
+
 DEFINES += _GNU_SOURCE __STDC_CONSTANT_MACROS __STDC_FORMAT_MACROS __STDC_LIMIT_MACROS
 
 OTHER_FILES += \
@@ -75,6 +77,5 @@ unix: LIBS += -L$$LIBDIR \
     -lLLVMMCParser \
     -lLLVMIR \
     -lLLVMSupport \
-    -lcurses \
     -ldl \
     -lpthread
