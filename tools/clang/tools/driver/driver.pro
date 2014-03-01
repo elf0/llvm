@@ -7,7 +7,8 @@ TEMPLATE = app
 CONFIG += console
 CONFIG -= qt
 CONFIG -= app_bundle
-DESTDIR = ../../../../bin
+TargetRoot = ../../../..
+DESTDIR = $$TargetRoot/bin
 
 INCLUDEPATH = ../../../../include
 
@@ -24,10 +25,10 @@ SOURCES += \
     cc1as_main.cpp \
     driver.cpp
 
-LIBDIR = $$OUT_PWD/../../../../lib
-CLANGLIBDIR = $$OUT_PWD/../../lib
-unix: LIBS += -L$$LIBDIR \
-    -L$$CLANGLIBDIR \
+
+LIBDIR = $$TargetRoot/lib
+LIBS += \
+    -L$$LIBDIR \
     -lclangDriver \
     -lclangFrontendTool \
     -lclangFrontend \
@@ -40,42 +41,6 @@ unix: LIBS += -L$$LIBDIR \
     -lclangAST \
     -lclangBasic \
     -lclangLex \
-\
-    -lLLVMLinker \
-    -lLLVMOption \
-    -lLLVMExecutionEngine \
-    -lLLVMInstrumentation \
-    -lLLVMInterpreter \
-    -lLLVMIRReader \
-    -lLLVMJIT \
-    -lLLVMMCJIT \
-    -lLLVMRuntimeDyld \
-    -lLLVMX86 \
-    -lLLVMX86AsmParser \
-    -lLLVMX86MCTargetDesc \
-    -lLLVMX86TargetInfo \
-    -lLLVMX86Utils \
-\
-    -lLLVMX86AsmPrinter \
-    -lLLVMSelectionDAG \
-    -lLLVMTarget \
-    -lLLVMObject \
-    -lLLVMCodeGen \
-    -lLLVMMC \
-    -lLLVMBitReader \
-    -lLLVMBitWriter \
-    -lLLVMAsmPrinter \
-    -lLLVMAsmParser \
-    -lLLVMIPO \
-    -lLLVMScalarOpts \
-    -lLLVMVectorize \
-    -lLLVMInstCombine \
-    -lLLVMObjCARC \
-    -lLLVMUtils \
-    -lLLVMAnalysis \
-    -lLLVMipa \
-    -lLLVMMCParser \
-    -lLLVMIR \
-    -lLLVMSupport \
-    -ldl \
-    -lpthread
+    `$$DESTDIR/llvm-config --libs --ldflags`
+
+PRE_TARGETDEPS += $$DESTDIR/llvm-config

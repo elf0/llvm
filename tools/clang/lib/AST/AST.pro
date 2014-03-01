@@ -7,7 +7,7 @@ TEMPLATE = lib
 CONFIG += staticlib
 CONFIG -= qt
 CONFIG -= app_bundle
-DESTDIR = ..
+DESTDIR = ../../../../lib
 
 INCLUDEPATH = ../../../../include
 
