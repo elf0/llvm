@@ -41,6 +41,7 @@ LIBS += \
     -lclangAST \
     -lclangBasic \
     -lclangLex \
-    `$$DESTDIR/llvm-config --libs --ldflags`
+    `$$DESTDIR/llvm-config --libs --ldflags` \
+     -ldl
 
 PRE_TARGETDEPS += $$DESTDIR/llvm-config
