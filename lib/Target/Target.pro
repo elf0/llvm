@@ -5,4 +5,5 @@
 TEMPLATE = subdirs
 
 SUBDIRS = libTarget.pro \
+    ARM \
     X86
