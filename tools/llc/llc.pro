@@ -12,7 +12,7 @@ INCLUDEPATH = ../../include
 
 QMAKE_CXXFLAGS += `$$DESTDIR/llvm-config --cxxflags` -Wno-unused-parameter
 
-LIBS += `$$DESTDIR/llvm-config --libs --ldflags`
+LIBS += `$$DESTDIR/llvm-config --libs --ldflags` -ldl
 
 PRE_TARGETDEPS += $$DESTDIR/llvm-config
 
