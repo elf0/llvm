@@ -62,7 +62,7 @@ unix: LIBS += -L$$LIBDIR \
     -lLLVMUtils \
     -lLLVMAnalysis \
     -lLLVMMCParser \
-    -lLLVMIR \
+    -lLLVMCore \
     -lLLVMSupport \
     -ldl \
     -lpthread

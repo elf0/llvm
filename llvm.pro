@@ -5,5 +5,6 @@
 TEMPLATE = subdirs
 
 SUBDIRS = \
+    examples \
     lib \
     tools
