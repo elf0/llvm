@@ -2,7 +2,7 @@
 #Author: elf
 #EMail: elf198012@gmail.com
 
-TARGET = LLVMX86MCTargetDesc
+TARGET = LLVMX86Desc
 TEMPLATE = lib
 CONFIG += staticlib
 CONFIG -= qt

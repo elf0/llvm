@@ -2,7 +2,7 @@
 #Author: elf
 #EMail: elf198012@gmail.com
 
-TARGET = LLVMObjCARC
+TARGET = LLVMObjCARCOpts
 TEMPLATE = lib
 CONFIG += staticlib
 CONFIG -= qt

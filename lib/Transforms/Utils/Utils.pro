@@ -2,7 +2,7 @@
 #Author: elf
 #EMail: elf198012@gmail.com
 
-TARGET = LLVMUtils
+TARGET = LLVMTransformUtils
 TEMPLATE = lib
 CONFIG += staticlib
 CONFIG -= qt

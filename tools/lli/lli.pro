@@ -43,10 +43,10 @@ unix: LIBS += -L$$LIBDIR \
     -lLLVMJIT \
     -lLLVMMCJIT \
     -lLLVMRuntimeDyld \
-    -lLLVMX86 \
+    -lX86CodeGen \
     -lLLVMX86AsmParser \
-    -lLLVMX86MCTargetDesc \
-    -lLLVMX86TargetInfo \
+    -lLLVMX86Desc \
+    -lLLVMX86Info \
     -lLLVMX86Utils \
 \
     -lLLVMX86AsmPrinter \
@@ -59,7 +59,7 @@ unix: LIBS += -L$$LIBDIR \
     -lLLVMBitReader \
     -lLLVMAsmPrinter \
     -lLLVMAsmParser \
-    -lLLVMUtils \
+    -lLLVMTransformUtils \
     -lLLVMAnalysis \
     -lLLVMMCParser \
     -lLLVMCore \
@@ -85,7 +85,7 @@ unix: PRE_TARGETDEPS += \
     $$LIBDIR/libLLVMExecutionEngine.a \
     $$LIBDIR/libLLVMInstrumentation.a \
     $$LIBDIR/libLLVMInterpreter.a \
-    $$LIBDIR/libLLVMIR.a \
+    $$LIBDIR/libLLVMCore.a \
     $$LIBDIR/libLLVMIRReader.a \
     $$LIBDIR/libLLVMJIT.a \
     $$LIBDIR/libLLVMMC.a \
@@ -97,10 +97,10 @@ unix: PRE_TARGETDEPS += \
     $$LIBDIR/libLLVMSelectionDAG.a \
     $$LIBDIR/libLLVMSupport.a \
     $$LIBDIR/libLLVMTarget.a \
-    $$LIBDIR/libLLVMUtils.a \
-    $$LIBDIR/libLLVMX86.a \
+    $$LIBDIR/libLLVMTransformUtils.a \
+    $$LIBDIR/libX86CodeGen.a \
     $$LIBDIR/libLLVMX86AsmParser.a \
     $$LIBDIR/libLLVMX86AsmPrinter.a \
-    $$LIBDIR/libLLVMX86MCTargetDesc.a \
-    $$LIBDIR/libLLVMX86TargetInfo.a \
+    $$LIBDIR/libLLVMX86Desc.a \
+    $$LIBDIR/libLLVMX86Info.a \
     $$LIBDIR/libLLVMX86Utils.a

@@ -2,7 +2,7 @@
 #Author: elf
 #EMail: elf198012@gmail.com
 
-TARGET = LLVMIPO
+TARGET = LLVMipo
 TEMPLATE = lib
 CONFIG += staticlib
 CONFIG -= qt

@@ -1,4 +1,4 @@
-TARGET = LLVMX86TargetInfo
+TARGET = LLVMX86Info
 TEMPLATE = lib
 CONFIG += staticlib
 CONFIG -= qt

@@ -2,7 +2,7 @@
 #Author: elf
 #EMail: elf198012@gmail.com
 
-TARGET = LLVMX86
+TARGET = X86CodeGen
 TEMPLATE = lib
 CONFIG += staticlib
 CONFIG -= qt
