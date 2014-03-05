@@ -5,8 +5,5 @@
 TEMPLATE = subdirs
 
 SUBDIRS = \
-    clang \
-    llc \
-    lld \
-    lli \
-    llvm-config
+    lib \
+    tools
