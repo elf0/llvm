@@ -12,7 +12,7 @@ DESTDIR = ../../bin
 INCLUDEPATH = ../../include
 
 DEFINES += _GNU_SOURCE __STDC_CONSTANT_MACROS __STDC_FORMAT_MACROS __STDC_LIMIT_MACROS
-LIBS += -lLLVMSupport -lz -lpthread -ldl
+LIBS += -lLLVMSupport -lpthread -ldl
 
 OTHER_FILES += \
     BuildVariables.inc.in \

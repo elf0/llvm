@@ -6,6 +6,6 @@ system("make -f GenFiles.mk")
 TEMPLATE = subdirs
 
 SUBDIRS = \
-    examples \
     lib \
-    tools
+    tools \
+    examples
